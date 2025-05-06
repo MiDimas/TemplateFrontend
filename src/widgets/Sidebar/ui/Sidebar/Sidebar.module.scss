@@ -1,0 +1,51 @@
+.Sidebar {
+    background-color: var(--light-bg-redesigned);
+    width: 220px;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s width ease;
+
+    .appLogo {
+        padding-top: 20px;
+        transition: 0.5s all ease;
+    }
+
+    .items {
+        margin-top: 40px;
+    }
+
+    .collapseBtn {
+        position: absolute;
+        display: flex;
+        height: 32px;
+        width: 32px;
+        right: 0;
+        top: 50%;
+        fill: var(--text);
+        transition: 0.3s all ease;
+        transform: rotate(-180deg);
+        cursor: pointer;
+    }
+
+    .switcher {
+        position: absolute;
+        bottom: 40px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .lang {
+        color: var(--icon-redesigned);
+        font: var(--font-title-m);
+    }
+}
+
+.collapsed {
+    width: 50px;
+
+    .collapseBtn {
+        transform: rotate(0deg);
+    }
+}

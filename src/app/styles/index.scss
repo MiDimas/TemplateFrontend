@@ -1,0 +1,47 @@
+@use "./reset";
+@use "./variables/global";
+@use "./themes/normal";
+@use "./themes/dark";
+
+.app {
+    font: var(--font-m);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.app_redesigned {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-family-title-redesigned);
+    }
+
+    font: var(--font-text-m);
+    color: var(--text-redesigned);
+    background: var(--bg-redesigned);
+    min-height: 100vh;
+}
+
+.content_page {
+    display: flex;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--card-bg);
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--inverted-bg-color);
+    border-radius: 20px;
+    border: 2px solid var(--bg-color);
+}

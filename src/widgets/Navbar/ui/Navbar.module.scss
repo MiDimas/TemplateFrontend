@@ -1,0 +1,21 @@
+.Navbar {
+    display: flex;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--bg);
+    align-items: center;
+    padding: 20px;
+    border-radius: 0px 0px 0 16px;
+}
+
+.links {
+    margin-left: auto;
+}
+
+.appName {
+    width: var(--sidebar-width);
+}
+
+.createLink {
+    text-decoration: none;
+}
