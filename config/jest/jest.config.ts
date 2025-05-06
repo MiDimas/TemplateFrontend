@@ -3,8 +3,9 @@
  * https://jestjs.io/docs/configuration
  */
 import path from 'path';
+import {Config} from 'jest';
 
-export default {
+const config: Config = {
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
@@ -27,7 +28,7 @@ export default {
     moduleNameMapper: {
         '\\.s?css$': 'identity-obj-proxy',
         '\\.svg$': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
-        axios: 'axios/dist/node/axios.cjs',
+        axios: '<rootDir>node_modules/axios/dist/node/axios.cjs',
         '^@/(.*)$': '<rootDir>src/$1',
     },
     modulePaths: ['<rootDir>src'],
@@ -202,3 +203,4 @@ export default {
     // Whether to use watchman for file crawling
     // watchman: true,
 };
+export default config;

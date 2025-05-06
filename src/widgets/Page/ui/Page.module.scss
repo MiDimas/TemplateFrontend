@@ -2,6 +2,8 @@
     overflow-y: auto;
     height: calc(100vh - 64px);
     width: 100%;
+    color: var(--text);
+    background-color: var(--dark-bg);
 }
 
 .trigger {

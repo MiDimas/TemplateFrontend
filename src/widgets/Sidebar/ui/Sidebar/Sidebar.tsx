@@ -6,6 +6,7 @@ import { getSidebarItems } from '../../model/selectors/getSidebarItems';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
 import cls from './Sidebar.module.scss';
 import ArrowIcon from "@/shared/assets/icons/Arrow.svg"
+import { ThemeSwitcher } from '@/features/ThemeSwitcher';
 
 interface SidebarProps {
     className?: string;
@@ -14,7 +15,6 @@ interface SidebarProps {
 export const Sidebar = memo(({ className }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
     const onToggle = () => {
-        console.log('click:', collapsed)
         setCollapsed((prevState) => !prevState);
     };
     const sidebarItemList = useSelector(getSidebarItems);
@@ -40,6 +40,9 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
                 onClick={onToggle}
                 className={cls.collapseBtn}
             />
+            <div className={cls.switchers}>
+                <ThemeSwitcher className={cls.themeSwitcher} />
+            </div>
         </aside>
     );
 });

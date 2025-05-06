@@ -23,8 +23,9 @@ export const SidebarItem = memo((props: SidebarItemProps) => {
     return (
         <NavLink
             to={path}
-            className={classNames(cls.SidebarItem, {
+            className={({isActive}) => classNames(cls.SidebarItem, {
                 [cls.collapsed]: collapsed,
+                [cls.active]: isActive,
             })}
         >
             <div className={cls.block}>

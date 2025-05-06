@@ -24,6 +24,6 @@ export const ThemeSwitcher = memo(({ className }: ThemeSwitcherProps) => {
         <button
             className={classNames('', {}, [className])}
             onClick={toggleThemeHandler}
-        />
+        >TM</button>
     );
 });

@@ -1,5 +1,5 @@
 .Sidebar {
-    background-color: var(--light-bg-redesigned);
+    background-color: var(--light-bg);
     width: 220px;
     height: 100%;
     border-radius: 32px;
@@ -29,15 +29,25 @@
         cursor: pointer;
     }
 
-    .switcher {
+    .switchers {
         position: absolute;
         bottom: 40px;
         padding: 0 20px;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: 0.5s all ease;
+    }
+    .themeSwitcher {
+        color: var(--text);
+        border: 1px solid var(--text);
+        background-color: var(--icon);
+        width: 30px;
+        cursor: pointer;
     }
 
     .lang {
-        color: var(--icon-redesigned);
+        color: var(--icon);
         font: var(--font-title-m);
     }
 }
@@ -47,5 +57,9 @@
 
     .collapseBtn {
         transform: rotate(0deg);
+    }
+
+    .switchers {
+        padding: 0 10px;
     }
 }
