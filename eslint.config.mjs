@@ -69,7 +69,7 @@ export default tseslint.config(
       }],
       '@typescript-eslint/ban-ts-comment': 'off',
       'react/display-name': 'off',
-      'eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }]
     },
     settings: {
       react: {
