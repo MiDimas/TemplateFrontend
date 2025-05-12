@@ -12,11 +12,9 @@ export const buildCssLoaders = (isDev: boolean) => ({
                     auto: (resPath: string) => resPath.includes('.module.'),
                     localIdentName: isDev
                         ? '[path][name]__[local]--[hash:base64:5]'
-                        : '[hash:base64:8]'
-                    ,
+                        : '[hash:base64:8]',
                     namedExport: false,
                     exportLocalsConvention: 'as-is'
-                    
                 },
                 importLoaders: 1,
             },

@@ -47,6 +47,7 @@
         "@storybook/addon-essentials": "8.6.12",
         "@storybook/addon-interactions": "8.6.12",
         "@storybook/addon-links": "8.6.12",
+        "@storybook/addon-themes": "^8.6.12",
         "@storybook/blocks": "8.6.12",
         "@storybook/react": "8.6.12",
         "@storybook/react-webpack5": "8.6.12",
@@ -112,8 +113,8 @@
         "i18next": "^25.0.1",
         "i18next-browser-languagedetector": "^8.0.5",
         "i18next-http-backend": "^3.0.2",
-        "react": "^19.1.0",
-        "react-dom": "^19.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
         "react-i18next": "^15.5.1",
         "react-redux": "^9.2.0",
         "react-router-dom": "^7.5.2"

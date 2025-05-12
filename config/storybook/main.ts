@@ -11,15 +11,21 @@ const config: StorybookConfig = {
             },
         },
         '@storybook/addon-interactions',
-        'storybook-addon-mock',
-        'storybook-addon-themes',
+        '@storybook/addon-themes',
     ],
     framework: {
         name: '@storybook/react-webpack5',
-        options: {},
+        options: {
+            fastRefresh: true,
+            fsCache: true,
+            lazyCompilation: true,
+        },
     },
     docs: {
         autodocs: 'tag',
+    },
+    typescript: {
+        reactDocgen: false,
     },
 };
 export default config;
