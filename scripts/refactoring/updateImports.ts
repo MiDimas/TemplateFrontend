@@ -21,10 +21,11 @@ sources.forEach((source) => {
         if (isAbsolute(value)) {
             importDec.setModuleSpecifier(`@/${value}`);
         }
-        // else if(isSrc(value)){
+        else if(isSrc(value)){
+            console.log('uncomment string if you want to refactor imports to deprecated folder');
         //     const clearValue = value.replace('@/shared/ui/', '@/shared/ui/deprecated/');
         //     importDec.setModuleSpecifier(`${clearValue}`);
-        // }
+        }
     });
 });
 

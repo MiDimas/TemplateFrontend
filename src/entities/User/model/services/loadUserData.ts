@@ -7,7 +7,7 @@ import {USER_LOCALSTORAGE_KEY} from "@/shared/const/localstorage";
 export const loadUserData= createAsyncThunk<User,  undefined, ThunkConfig<string>>(
     'articleDetails/fetchArticleById',
     async (_, thunkAPI) => {
-        const {rejectWithValue, getState, dispatch} = thunkAPI;
+        const {rejectWithValue, dispatch} = thunkAPI;
         const  userId = localStorage.getItem(USER_LOCALSTORAGE_KEY);
         console.log(userId);
         try {
